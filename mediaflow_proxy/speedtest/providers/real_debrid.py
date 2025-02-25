@@ -15,8 +15,8 @@ class RealDebridSpeedTest(BaseSpeedTestProvider):
             "EEUR3": "https://storage.torbox.app/10GB.bin",
         }
         # Add random number to prevent caching
-        urls = {location: f"{base_url}{random.uniform(0, 1):.16f}" for location, base_url in urls.items()}
-        return urls, None
+        #urls = {location: f"{base_url}{random.uniform(0, 1):.16f}" for location, base_url in urls.items()}
+        #return urls, None
 
     async def get_config(self) -> SpeedTestProviderConfig:
         urls, _ = await self.get_test_urls()
