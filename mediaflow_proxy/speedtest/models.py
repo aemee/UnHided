@@ -8,6 +8,7 @@ from pydantic import BaseModel, Field
 class SpeedTestProvider(str, Enum):
     REAL_DEBRID = "real_debrid"
     ALL_DEBRID = "all_debrid"
+    TORBOX = "torbox"
 
 
 class ServerInfo(BaseModel):
