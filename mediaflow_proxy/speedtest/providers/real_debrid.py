@@ -5,8 +5,8 @@ from mediaflow_proxy.speedtest.models import UserInfo
 from mediaflow_proxy.speedtest.providers.base import BaseSpeedTestProvider, SpeedTestProviderConfig
 
 
-class TorboxSpeedTest(BaseSpeedTestProvider):
-    """Torbox speed test provider implementation."""
+class RealDebridSpeedTest(BaseSpeedTestProvider):
+    """Real Debrid speed test provider implementation."""
 
     async def get_test_urls(self) -> Tuple[Dict[str, str], Optional[UserInfo]]:
         urls = {
