@@ -6,7 +6,7 @@ from mediaflow_proxy.speedtest.models import UserInfo
 from mediaflow_proxy.speedtest.providers.base import BaseSpeedTestProvider, SpeedTestProviderConfig
 
 
-class RealDebridSpeedTest(BaseSpeedTestProvider):
+class AllDebridSpeedTest(BaseSpeedTestProvider):
     """RealDebrid speed test provider implementation."""
 
     async def get_test_urls(self) -> Tuple[Dict[str, str], Optional[UserInfo]]:
