@@ -7,7 +7,7 @@ from mediaflow_proxy.speedtest.providers.base import BaseSpeedTestProvider, Spee
 
 
 class RealDebridSpeedTest(BaseSpeedTestProvider):
-    """Real Debrid speed test provider implementation."""
+    """Torbox speed test provider implementation."""
 
     async def get_test_urls(self) -> Tuple[Dict[str, str], Optional[UserInfo]]:
         urls = {
